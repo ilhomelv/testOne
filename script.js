@@ -5,7 +5,7 @@ let web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v
 //let web3 = new Web3(Web3.givenProvider);
 
 
-var abiJSON = web3.eth.contract([
+var abiJSON = web3.eth.Contract([
 	{
 		"constant": false,
 		"inputs": [],
