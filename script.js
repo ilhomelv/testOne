@@ -41,7 +41,10 @@ var abi = web3.eth.contract([
 ]);
 
 
-console.log(web3);
+var contract =   abi.at('0xAff036FA0Cf3c5782ed2c1214AEbBCc6149931fa');
 
+console.log(contract);
 
-console.log(web3.eth.getAccounts);
+//console.log(web3);
+
+//console.log(web3.eth.getAccounts);
