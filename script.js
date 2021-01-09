@@ -48,11 +48,9 @@ console.log(web3);
 
 
 
-if (typeof web3 !== 'undefined'){
 
 	web3.eth.getAccounts(function(err, accounts){
-		myAccountAddress = accounts[0];
+		var myAccountAddress = accounts[0];
 		console.log(myAccountAddress);
 	});
 
-}
