@@ -52,11 +52,7 @@ if (typeof web3 !== 'undefined'){
 
 	web3.eth.getAccounts(function(err, accounts){
 		myAccountAddress = accounts[0];
-
-		var myContract = new web3.eth.contract(abiJSON, contractAddress, {
-			from: myAccountAddress, // default from address
-			});
-
+		console.log(myAccountAddress);
 	});
 
 }
