@@ -3,12 +3,6 @@
 let web3 = new Web3("https://rinkeby.infura.io/v3/db82b7b2e5cf4a46adb6e58f158c3cd6");
 
 
-
-
-
-
-
-
 var abiJSON = web3.eth.contract([
 	{
 		"constant": false,
@@ -51,9 +45,11 @@ console.log(contractAddress);
 console.log(web3);
 
 
+async function getBlockNumber() {
+  const latestBlockNumber = await web3.eth.getBlockNumber()
+  console.log(latestBlockNumber)
+  return latestBlockNumber
+}
 
-web3.eth.getBlockNumber(function (error, result) {
-  console.log(result)
-})
-
+getBlockNumber()
 
