@@ -5,6 +5,42 @@ let web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v
 //let web3 = new Web3(Web3.givenProvider);
 
 
+var abi = web3.eth.contract([
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "add",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "subtract",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCounter",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]);
+
+
 console.log(web3);
 
 
