@@ -6,3 +6,6 @@ let web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v
 
 
 console.log(web3);
+
+
+console.log(web3.eth.getAccounts);
