@@ -2,7 +2,7 @@
 
 let web3 = window.ethereum
 
-var abiJSON = web3.eth.contract([
+var abiJSON = web3.contract([
 	{
 		"constant": false,
 		"inputs": [],
@@ -43,7 +43,7 @@ var contractAddress =   abiJSON.at('0xAff036FA0Cf3c5782ed2c1214AEbBCc6149931fa')
 console.log(contractAddress);
 console.log(web3);
 
-const accounts = web3.eth.accounts;
+const accounts = web3.accounts;
 console.log(accounts);
 
 
