@@ -4,17 +4,14 @@ let web3 = new Web3("https://rinkeby.infura.io/v3/db82b7b2e5cf4a46adb6e58f158c3c
 
 
 
-
-if (window.ethereum != null) {
-  state.web3 = new Web3(window.ethereum)
-  try {
-    // Request account access if needed
-    await window.ethereum.enable()
-    // Acccounts now exposed
-  } catch (error) {
-    // User denied account access...
-  }
+async function getBlockNumber() {
+  const latestBlockNumber = await web3.eth.getBlockNumber()
+  console.log(latestBlockNumber)
+  return latestBlockNumber
 }
+
+getBlockNumber()
+
 
 
 
