@@ -42,8 +42,6 @@ var contractAddress =   abiJSON.at('0xAff036FA0Cf3c5782ed2c1214AEbBCc6149931fa')
 console.log(contractAddress);
 console.log(web3);
 
-}
-
 const accounts = web3.eth.accounts;
 console.log(accounts);
 
