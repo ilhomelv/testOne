@@ -45,11 +45,3 @@ console.log(contractAddress);
 console.log(web3);
 
 
-async function getBlockNumber() {
-  const latestBlockNumber = await web3.eth.getBlockNumber()
-  console.log(latestBlockNumber)
-  return latestBlockNumber
-}
-
-getBlockNumber()
-
