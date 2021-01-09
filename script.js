@@ -1,5 +1,6 @@
-let web3 = new Web3("https://rinkeby.infura.io/v3/db82b7b2e5cf4a46adb6e58f158c3cd6");
+//let web3 = new Web3("https://rinkeby.infura.io/v3/db82b7b2e5cf4a46adb6e58f158c3cd6");
 
+let web3 = window.ethereum
 
 var abiJSON = web3.eth.contract([
 	{
