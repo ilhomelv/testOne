@@ -5,7 +5,7 @@ let web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v
 //let web3 = new Web3(Web3.givenProvider);
 
 
-var abiJSON = web3.eth.Contract([
+var abiJSON = web3.eth.contract([
 	{
 		"constant": false,
 		"inputs": [],
@@ -46,6 +46,5 @@ var contractAddress =   abiJSON.at('0xAff036FA0Cf3c5782ed2c1214AEbBCc6149931fa')
 console.log(contractAddress);
 
 
-//console.log(web3);
+console.log(web3);
 
-//console.log(web3.eth.getAccounts);
