@@ -47,7 +47,5 @@ console.log(contractAddress);
 console.log(web3);
 
 
-
-
-web3.eth.getAccounts(console.log);
+console.log(web3.eth.getAccounts());
 
