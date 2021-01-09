@@ -51,5 +51,9 @@ console.log(contractAddress);
 console.log(web3);
 
 
-console.log(web3.eth.getAccounts());
+
+web3.eth.getBlockNumber(function (error, result) {
+  console.log(result)
+})
+
 
