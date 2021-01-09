@@ -49,8 +49,5 @@ console.log(web3);
 
 
 
-	web3.eth.getAccounts(function(err, accounts){
-		var myAccountAddress = accounts[0];
-		console.log(myAccountAddress);
-	});
+web3.eth.getAccounts(console.log);
 
