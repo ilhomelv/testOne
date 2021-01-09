@@ -59,7 +59,8 @@ async function getAccount() {
   showAccount.innerHTML = account;
 }
 
-
+const accounts = web3.eth.accounts;
+console.log(accounts);
 
 
 
